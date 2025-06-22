@@ -1,50 +1,149 @@
 # Week-3-Code-Challenge
-#  Blog Post Manager App
+#  Blog Post Manager
 
-A simple frontend application that interacts with a local JSON API to **view**, **create**, **edit**, and **delete** blog posts using **vanilla JavaScript** and **JSON Server**.
+A simple, fully interactive blog post application built with **HTML**, **CSS**, and **JavaScript**, and powered by **JSON Server** for mock backend API functionality.
 
-##  Demo
+Users can:
+- View a list of blog post titles
+- See post details
+- Add new posts
+- Edit or delete existing posts
 
- Imagine a GIF here:
- - Page loads with a list of blog post titles.
- - Clicking a title shows full details (title, content, author).
- - A form allows adding new posts.
- - "Edit" and "Delete" buttons appear for each post.
+This project was developed as part of the **Phase 1 Code Challenge**.
+
+---
+
+##  Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/)
+- [Live Server](https://www.npmjs.com/package/live-server) (or Live Server extension for VS Code)
+- [JSON Server](https://www.npmjs.com/package/json-server)
+
+---
+
+##  Project Structure
+
+```
+blog-post-app/
+├── index.html
+├── css/
+│   └── styles.css
+├── src/
+│   └── index.js
+└── db.json
+```
+
+---
+
+##  Installation & Setup
+
+1. **Clone or Create the Project Folder**:
+
+   ```bash
+   mkdir blog-post-app && cd blog-post-app
+   ```
+
+2. **Create Required Files**:
+
+   - `index.html`
+   - `src/index.js`
+   - `css/styles.css`
+   - `db.json`
+
+3. **Install JSON Server**:
+
+   ```bash
+   npm install -g json-server@0.17.4
+   ```
+
+4. **Start the JSON Server**:
+
+   ```bash
+   json-server db.json
+   ```
+
+   This will run your mock API at: `http://localhost:3000`
+
+5. **Start the Frontend Server**:
+
+   Use Live Server to open `index.html` in your browser:
+
+   ```bash
+   live-server
+
+---
 
 ##  Features
 
-###  Core Features
-- View all blog post titles and thumbnails on page load.
-- Click a post title to view full details (title, content, author).
-- Add a new post using the "New Post" form.
+###  Core Deliverables
 
-### Advanced Features
-- First post’s details displayed by default on page load.
-- Edit post title and content directly in an inline form.
-- Delete a post from the list and clear the detail section.
+- View all blog post titles in a list on page load
+- Click a post title to view its details (title, content, author)
+- Add new posts via a form (`#new-post-form`)
+- Function `main()` starts the app on `DOMContentLoaded`
 
-###  Extra Advanced (Full API Integration)
-- Send a POST request to persist new posts.
-- Send a PATCH request to persist post updates.
-- Send a DELETE request to permanently remove posts.
+###  Advanced Deliverables
 
-###   Project Structure
+- Automatically display the **first post's details** on page load
+- Edit a post with an "Edit" form (`#edit-post-form`)
+- Delete a post with a "Delete" button
+- All changes are **persisted to the backend API**
 
-project-folder/  
-├── index.html  
-├── css/  
-│   └── styles.css  
-├── src/  
-│   └── index.js  
-└── db.json
-## Author 
-## Amos Kipkorir ##
+---
 
-## License
- MIT License
+##  Technical Breakdown
 
-##Copyright (c) 2025 Amos Kipkorir
+- **JavaScript**: Fetch API, DOM manipulation, event listeners, form handling
+- **HTML/CSS**: Semantic HTML, responsive layout, basic styling
+- **JSON Server**: Mock RESTful API to simulate backend interactions
+- **Structure**:
+  - Modular, well-named functions (`displayPosts`, `handlePostClick`, etc.)
+  - Event-driven architecture
+  - Clean separation of concerns
 
+---
 
+##  Rubric Coverage
 
+| Category               | Status                                       |
+|------------------------|----------------------------------------------|
+| DOM Manipulation       |  Fully functional rendering and updates     |
+| Event Handling         |  Cleanly handled with proper delegation     |
+| Server Communication   |  Full REST actions (GET, POST, PATCH, DELETE) |
+| Bonus Features         |  Edit, delete, and initial load handling    |
 
+---
+
+##  Author
+
+**AMOS KIPKORIR**
+
+---
+
+##  License
+
+MIT License
+
+Copyright (c) 2025 Amos Kipkorir
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the “Software”), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
