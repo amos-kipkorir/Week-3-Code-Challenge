@@ -1,5 +1,5 @@
 # Week-3-Code-Challenge
-#  Blog Post Manager
+#  Blog Post
 
 A simple, fully interactive blog post application built with **HTML**, **CSS**, and **JavaScript**, and powered by **JSON Server** for mock backend API functionality.
 

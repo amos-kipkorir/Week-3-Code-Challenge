@@ -1,11 +1,20 @@
 {
   "posts": [
     {
-      "id": "4744",
-      "title": "football news",
-      "author": "fabrizio romianio",
-      "content": "transfer nnews",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4GwMtrH19OLhFUWe7JB9GDZwRrsg4wzv5MQ&s"
+      "id": "890e",
+      "title": "Football News",
+      "author": "Fabrizio Romanio",
+      "date": "2025-06-24",
+      "content": "Worldcup winner is back in action. He is set to undergoe medical in paris on friday, to join monaco as a free agent after 18 months ban in football. Man was charged for antidoping almost 2 years ago , Paul Pogba is a new monaco player",
+      "image": "https://e0.365dm.com/22/10/1600x900/skysports-paul-pogba-france_5950133.jpg?20221031163222"
+    },
+    {
+      "id": "b261",
+      "title": "The Holy Trinity of Web Development",
+      "author": "AMOh DE MAN",
+      "date": "2025-06-25",
+      "content": "Together, this “Holy Trinity” empowers developers to create beautiful, functional, and responsive websites. Mastering them is your first step into the powerful world of web development.",
+      "image": "https://t3.ftcdn.net/jpg/02/16/69/04/240_F_216690453_Gr2trrWnvsV1gnwVXIytuu7Xd4EN1YP7.jpg"
     }
   ]
 }
